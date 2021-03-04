@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: kriasoft/delete-dns-record@v1
+      - uses: remotecompany/delete-dns-record@v1
         with:
           name: "{PR}-review.example.com"
           token: ${{ secrets.CLOUDFLARE_TOKEN }}
